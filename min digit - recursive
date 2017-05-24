@@ -1,0 +1,8 @@
+
+int r_min(int k)
+{
+    int min = k%10;
+    if(k/10 > 0) min = r_min(k/10);
+    if(k%10 < min) return k%10;
+    return min;
+}
