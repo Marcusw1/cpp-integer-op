@@ -1,0 +1,12 @@
+int r_max(int k)
+{
+    int temp = 0;
+    
+    //enter stack
+    if(k/10 > 0) temp = r_max(k/10);
+    
+    //leave stack
+    if (k%10 > temp) return k%10;
+  
+  return temp;     
+}
