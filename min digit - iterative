@@ -1,0 +1,10 @@
+int i_min(int k)
+{
+    int min = k%10;
+    while(k%10 > 0)
+    {
+        if(k%10 < min) min = k%10;
+        k = k/10;
+    }
+    return min;
+}
