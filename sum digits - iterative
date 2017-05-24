@@ -1,0 +1,12 @@
+int i_sum(int k)
+{
+    int sum =0;
+    
+    while(k%10 > 0)
+    {
+        sum += k%10;
+        k = k/10;
+    }    
+    
+    return sum;
+}
