@@ -1,0 +1,8 @@
+int r_sum(int k)
+{  
+    int sum = k%10;
+    
+    if(k/10 > 0) sum += r_sum(k/10);
+
+     return sum;
+}
